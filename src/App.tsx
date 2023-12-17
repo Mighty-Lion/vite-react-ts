@@ -5,17 +5,11 @@ import Layout from './components/Layout';
 
 export function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-  );
-}
-
-export function WrappedApp() {
-  return (
     <Layout>
-      <App />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </Layout>
   );
 }

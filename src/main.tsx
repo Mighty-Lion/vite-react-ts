@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { WrappedApp } from './App';
-import './index.css';
-
+import './css/index.css';
+import './css/fonts.css';
+import './css/colors.css';
 import 'react-toastify/dist/ReactToastify.css';
-import {ToastContainer} from "react-toastify";
+import { ToastContainer } from 'react-toastify';
+import { App } from '@/App';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <Router>
-      <WrappedApp />
+      <App />
     </Router>
     <ToastContainer
       position="top-right"
